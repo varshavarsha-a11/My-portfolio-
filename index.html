@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Varsha S - Portfolio</title>
+  <style>
+    /* Animated Gradient Background */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(270deg, #f48fb1, #ce93d8, #81d4fa, #a5d6a7, #ffe082);
+      background-size: 1000% 1000%;
+      animation: gradientBG 20s ease infinite;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(240, 98, 146, 0.9);
+      color: white;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #ad1457;
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(240, 98, 146, 0.9);
+      color: white;
+      margin-top: 2rem;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+    /* Button styling */
+    button {
+      background: #ec407a;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #d81b60;
+      transform: scale(1.1);
+    }
+    /* Profile image */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Add your photo file as profile.jpg in same folder -->
+    <img src="profile.jpg" alt="Varsha's Photo" class="profile-img">
+    <h1>Varsha S</h1>
+    <p>BCA Department, MMES Women's Arts and Science College, Melvisharam</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+    </nav>
+  </header>
+
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>Hello! I am <strong>Varsha S</strong>, a student from the BCA department at <em>MMES Women's Arts and Science College, Melvisharam</em>.  
+       I’m passionate about learning new technologies, exploring creativity, and developing my skills to grow personally and professionally.</p>
+  </section>
+
+  <section id="education" class="card">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Computer Applications (BCA)</strong>  
+          MMES Women’s Arts and Science College, Melvisharam  
+          <em>2022 – Present</em></li>
+      <li><strong>Higher Secondary School (HSC)</strong>  
+          [Your School Name], [Location]  
+          <em>Completed in 2022</em></li>
+      <li><strong>Secondary School (SSLC)</strong>  
+          [Your School Name], [Location]  
+          <em>Completed in 2020</em></li>
+    </ul>
+  </section>
+
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Web Development:</strong> Responsive Design, Basic UI/UX</li>
+      <li><strong>Soft Skills:</strong> Problem Solving, Communication, Teamwork</li>
+      <li><strong>Other Skills:</strong> Microsoft Office, Basic C Programming</li>
+    </ul>
+  </section>
+
+  <section id="hobbies" class="card">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Dancing</li>
+      <li>Cooking</li>
+      <li>Singing</li>
+      <li>Reading</li>
+      <li>Writing</li>
+    </ul>
+  </section>
+
+  <section class="card" style="text-align:center;">
+    <h2>Interactive Section</h2>
+    <p>Click the button to see a welcome message:</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message" style="margin-top:1rem; font-weight:bold; color:#d81b60;"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Varsha S | My Portfolio</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "Welcome to my portfolio! 💖";
+    }
+  </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
